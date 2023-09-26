@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha384-kf9l5z4z4p4s0r6i5tm5m5a2h5ue0b6fej7jo0d6z4erx1k8l2pi0w5r5e5n5y5a5s5m5b5e5n5i5d5a5j5b5m5y5w5a5s5m5b5e5s5s5m5r5i5g5e5r5" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <textarea id="result" rows="2" cols="30"></textarea>
+        </div>
+        <div class="buttons">
+            
+            <button id="equal" type="button" aria-label="calculate" onclick="calculate()">=</button>
+            <button id="plus" class="operator" type="button" aria-label="appendToDisplay" onclick="appendToDisplay('+')">+</button>
+            <button id="minus" class="operator" type="button" aria-label="appendToDisplay" onclick="appendToDisplay('-')">-</button>
+            <button id="multiply" class="operator" type="button" aria-label="appendToDisplay" onclick="appendToDisplay('*')">*</button>
+            <button id="divide" class="operator" type="button" aria-label="appendToDisplay" onclick="appendToDisplay('/')">/</button>
+            <button id="zeo" type="button" aria-label="appendToDisplay" onclick="appendToDisplay(0)">0</button>
+            <button id="one" type="button" aria-label="appendToDisplay" onclick="appendToDisplay(1)">1</button>
+            <button id="two" type="button" aria-label="appendToDisplay" onclick="appendToDisplay(2)">2</button>
+            <button id="three" type="button" aria-label="appendToDisplay" onclick="appendToDisplay(3)">3</button>
+            <button id="four" type="button" aria-label="appendToDisplay" onclick="appendToDisplay(4)">4</button>
+            <button id="five" type="button" aria-label="appendToDisplay" onclick="appendToDisplay(5)">5</button>
+            <button id="six type="button" aria-label="appendToDisplay"onclick="appendToDisplay(6)">6</button>
+            <button id="seven" type="button" aria-label="appendToDisplay" onclick="appendToDisplay(7)">7</button>
+            <button id="eight" type="button" aria-label="appendToDisplay" onclick="appendToDisplay(8)">8</button>
+            <button id="nine"  type="button" aria-label="appendToDisplay" onclick="appendToDisplay(9)">9</button>
+            <button id="clear" class="clear"  type="reset"  aria-label="clearDisplay" onclick="clearDisplay()"> <i class="fas fa-times"></i> Clear</button>
+            
+        </div>
+    </div>
+    <div class="history">
+        <h2>Calculation History</h2>
+        <ul id="history-list"></ul>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
